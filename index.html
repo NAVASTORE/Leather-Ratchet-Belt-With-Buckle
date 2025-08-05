@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leather Ratchet Belt With Buckle | FASHION.ID</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+        
+        :root {
+            --black: #000000;
+            --charcoal: #36454f;
+            --gold: #d4af37;
+            --champagne: #f7e7ce;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--charcoal);
+            overflow-x: hidden;
+            background-color: #f9f9f9;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .gold-accent {
+            color: var(--gold);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 16px;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(12, 12, 12, 0.85), rgba(18, 18, 18, 0.9)), 
+                        url('https://cdn.wshopon.com/image/db5e9c4480e9a70e62644ff149a0e5deee9f30ec.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .countdown-item {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(54, 69, 79, 0.15);
+        }
+
+        .gallery-img {
+            cursor: pointer;
+            transition: all 0.4s ease;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05) rotate(1deg);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .social-notification {
+            animation: slideInRight 0.5s forwards, fadeOut 0.5s forwards 5s;
+            transform: translateX(110%);
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(110%); }
+            to { transform: translateX(0); }
+        }
+        
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; visibility: hidden; }
+        }
+
+        .order-form-glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .btn-primary {
+            background: var(--gold);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: #c1992d;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+        }
+        
+        .social-notification:hover {
+            animation-play-state: paused;
+        }
+        
+        .avatar-initial {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold), var(--champagne));
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+        
+        /* OrderOnline Overrides */
+        .orderonline-embed-form {
+            background: transparent !important;
+            padding: 0 !important;
+            border-radius: 16px;
+        }
+        
+        .orderonline-embed-form input, 
+        .orderonline-embed-form select,
+        .orderonline-embed-form textarea {
+            font-family: 'Roboto', sans-serif !important;
+            border-radius: 8px !important;
+            padding: 12px 16px !important;
+            margin-bottom: 15px !important;
+            border: 1px solid var(--champagne) !important;
+            background: rgba(255, 255, 255, 0.95) !important;
+        }
+        
+        .orderonline-embed-form button[type="submit"] {
+            font-family: 'Poppins', sans-serif !important;
+            background: var(--gold) !important;
+            border-radius: 12px !important;
+            padding: 15px 20px !important;
+            font-weight: 600 !important;
+            text-transform: uppercase !important;
+            transition: all 0.3s ease !important;
+            border: none !important;
+        }
+        
+        .orderonline-embed-form button[type="submit"]:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.25) !important;
+        }
+        
+        #phone-code, #phone-label {
+            display: none !important;
+        }
+        
+        /* Pricing Section Styling */
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 1.2rem;
+        }
+        
+        .discounted-price {
+            color: var(--gold);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Order Button -->
+    <div class="fixed z-40 bottom-5 right-5 md:right-10">
+        <button id="sticky-order-btn" class="btn-primary px-6 py-3 md:px-8 md:py-4 rounded-full font-bold text-white shadow-xl flex items-center">
+            <i class="fas fa-shopping-cart mr-2"></i>
+            <span>Pesan Sekarang - Rp 167.860</span>
+        </button>
+    </div>
+    
+    <!-- Notification Popup Container -->
+    <div id="social-proof-container" class="fixed top-5 right-5 z-50 w-full max-w-sm">
+        <!-- Popups will be inserted here by JS -->
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white h-screen flex items-center relative">
+        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-90"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/2">
+                    <div class="mb-6">
+                        <span class="bg-amber-500 text-black py-1 px-3 text-sm rounded-full font-bold inline-flex items-center">
+                            <i class="fas fa-tag mr-2"></i>DISKON 50% HARI INI
+                        </span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Tali Pinggang <span class="gold-accent">Premium</span> Dengan Gesper Modern
+                    </h1>
+                    <p class="text-xl mb-8 font-light text-gray-200 max-w-xl">
+                        Tingkatkan penampilan Anda dengan tali pinggang genuine leather dengan gesper ratcheting eksklusif. 
+                        Nyaman, elegant, dan tahan lama sepanjang hari.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                        <button id="order-btn" class="btn-primary px-8 py-4 rounded-xl text-xl font-semibold shadow-xl relative overflow-hidden">
+                            <span class="relative z-10">PESAN SEKARANG - Rp 167.860</span>
+                            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-5 z-0"></div>
+                    </div>
+                    <div class="flex items-center gap-6 mt-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-truck text-amber-500 mr-2"></i>
+                            <span>Gratis Ongkir se-Indonesia</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-alt text-amber-500 mr-2"></i>
+                            <span>Garansi 1 Tahun</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-amber-500 mr-2"></i>
+                            <span>Kualitas Import</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center mt-12 md:mt-0">
+                    <div class="relative">
+                        <img src="https://cdn.wshopon.com/image/db5e9c4480e9a70e62644ff149a0e5deee9f30ec.jpeg" 
+                             alt="Leather Ratchet Belt" 
+                             class="w-full max-w-lg rounded-lg shadow-2xl border-4 border-amber-500/20">
+                        <div class="absolute -bottom-6 left-0 right-0">
+                            <div class="glass-card py-4 px-6 inline-flex items-center rounded-full">
+                                <div class="w-4 h-4 bg-amber-500 rounded-full mr-2 animate-pulse"></div>
+                                <span class="text-sm font-bold">400+ Terjual Bulan Ini</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <div class="py-6 bg-white shadow">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap justify-center items-center gap-10">
+                <div class="text-center">
+                    <i class="fas fa-box-open text-3xl mb-2 text-amber-500"></i>
+                    <p class="font-bold">Gratis Pengiriman</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-shield-alt text-3xl mb-2 text-amber-500"></i>
+                    <p class="font-bold">Garansi Asli</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-undo text-3xl mb-2 text-amber-500"></i>
+                    <p class="font-bold">14 Hari Pengembalian</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-check-circle text-3xl mb-2 text-amber-500"></i>
+                    <p class="font-bold">100% Bahan Kulit Asli</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-headset text-3xl mb-2 text-amber-500"></i>
+                    <p class="font-bold">CS 24 Jam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- USP Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Kenapa Tali Pinggang Ini Berbeda?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Dengan bahan berkualitas tinggi dan desain inovatif, tali pinggang ini akan mengubah penampilan Anda setiap hari.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="product-card bg-white rounded-xl p-8 border border-gray-100 shadow-md flex flex-col items-center text-center">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-gem fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Material Premium</h3>
+                    <p class="text-gray-600">Terbuat dari 100% kulit asli yang tahan lama dengan tekstur elegan.</p>
+                </div>
+                
+                <div class="product-card bg-white rounded-xl p-8 border border-gray-100 shadow-md flex flex-col items-center text-center">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-cogs fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Mekanisme Ratcheting</h3>
+                    <p class="text-gray-600">Teknologi gesper modern dengan 38 posisi penyesuaian ukuran.</p>
+                </div>
+                
+                <div class="product-card bg-white rounded-xl p-8 border border-gray-100 shadow-md flex flex-col items-center text-center">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-cut fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Dapat Disesuaikan</h3>
+                    <p class="text-gray-600">Potong sesuai ukuran pinggang Anda untuk kenyamanan sempurna.</p>
+                </div>
+                
+                <div class="product-card bg-white rounded-xl p-8 border border-gray-100 shadow-md flex flex-col items-center text-center">
+                    <div class="feature-icon mb-6">
+                        <i class="fas fa-crosshairs fa-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Presisi Tinggi</h3>
+                    <p class="text-gray-600">Penyesuaian akurat dalam kelipatan 0,2 inci untuk kenyamanan maksimal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Product Showcase -->
+    <section class="py-16 bg-amber-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Penampilan Detail Produk</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Lihat lebih dekat kualitas premium dari tali pinggang ini dari berbagai sudut.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gallery-img">
+                    <img src="https://cdn.wshopon.com/image/7323f486db11ff5c8e9d4f6604aca26633c0b11b-600.webp" 
+                         alt="Close-up Leather Ratchet Buckle" 
+                         class="w-full h-full object-cover rounded-lg shadow-xl">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://cdn.wshopon.com/image/691503dbe0f3a7e8e2837ffe26ee1142512b59f3-600.webp" 
+                         alt="Leather Belt Structure" 
+                         class="w-full h-full object-cover rounded-lg shadow-xl">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://cdn.wshopon.com/image/83155ad857595308c156d093823f42625cca205d-700.jpeg" 
+                         alt="Full Belt in Box" 
+                         class="w-full h-full object-cover rounded-lg shadow-xl">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://cdn.wshopon.com/image/8339823f25a23f4a606c361fb7bbd7df83f215e4-600.webp" 
+                         alt="Belt Measurement" 
+                         class="w-full h-full object-cover rounded-lg shadow-xl">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://cdn.wshopon.com/image/4a885233b80caf5cb95281e7db46c3b3fe23102c.webp" 
+                         alt="Belt Side View" 
+                         class="w-full h-full object-cover rounded-lg shadow-xl">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://cdn.wshopon.com/image/ae48ff630f2897d21aa1dad698aeb140beeb56c3.jpeg" 
+                         alt="Wearing Belt" 
+                         class="w-full h-full object-cover rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Order Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-start gap-10">
+                <div class="w-full lg:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <img src="https://cdn.wshopon.com/image/ae48ff630f2897d21aa1dad698aeb140beeb56c3.jpeg" 
+                             alt="Wearing Leather Belt" 
+                             class="w-full max-w-md rounded-xl shadow-2xl border-4 border-amber-500/10">
+                         <div class="absolute top-0 left-0 -mt-6 -ml-6 bg-amber-500 rounded-xl py-3 px-6 shadow-lg">
+                             <p class="text-white font-bold text-xl">DISKON 50%</p>
+                         </div>
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6">Penawaran Spesial Hari Ini</h2>
+                    <p class="text-gray-600 mb-8">Jangan lewatkan kesempatan untuk memiliki tali pinggang premium berkualitas tinggi dengan harga spesial.</p>
+                    
+                    <div class="mb-8">
+                        <div class="mb-4 flex items-center gap-4">
+                            <div class="original-price">Rp 335.720</div>
+                            <div class="discounted-price">Rp 167.860</div>
+                        </div>
+                        <div class="w-full bg-amber-100 rounded-full h-2 mb-4">
+                            <div class="bg-amber-500 h-2 rounded-full" style="width:75%"></div>
+                        </div>
+                        <p class="text-gray-600">Hanya tersisa 12 pcs diskon 50%</p>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-4">Promo Terbatas Berakhir Dalam:</h3>
+                        <div class="flex gap-2">
+                            <div class="countdown-item flex-col">
+                                <div id="countdown-hours" class="text-2xl font-bold">18</div>
+                                <div class="text-xs text-gray-500 mt-1">JAM</div>
+                            </div>
+                            <div class="flex items-center justify-center text-xl font-bold text-gray-500">:</div>
+                            <div class="countdown-item flex-col">
+                                <div id="countdown-minutes" class="text-2xl font-bold">45</div>
+                                <div class="text-xs text-gray-500 mt-1">MENIT</div>
+                            </div>
+                            <div class="flex items-center justify-center text-xl font-bold text-gray-500">:</div>
+                            <div class="countdown-item flex-col">
+                                <div id="countdown-seconds" class="text-2xl font-bold">22</div>
+                                <div class="text-xs text-gray-500 mt-1">DETIK</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-orange-50 border-l-4 border-orange-500 p-4 mb-8 rounded">
+                        <p class="text-orange-700 font-medium">✓ Gratis pengiriman untuk pembelian hari ini</p>
+                        <p class="text-orange-700 font-medium mt-1">✓ Garansi uang kembali jika tidak puas</p>
+                    </div>
+                    
+                    <p class="mb-4 font-bold">PESAN SEKARANG!</p>
+                    
+                    <!-- Order Form -->
+                    <div class="order-form-glass p-8 rounded-2xl shadow-xl">
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="nava" 
+                                  data-product-slug="leather-ratchet-belt-with-buckle" 
+                                  data-product-id="6891a7352453e2ac9405201f" 
+                                  id="oo-embed-form-leather-ratchet-belt-with-buckle-8951" 
+                                  data-origin="orderonline">
+                                <div class="ooef-loader">Loading...</div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 text-center">
+                        <p class="text-sm text-gray-500 flex items-center justify-center">
+                            <i class="fas fa-lock fa-lg mr-2 text-gray-400"></i>Data Anda aman dan tidak akan disalahgunakan
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Apa Kata Pelanggan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Customer terpuaskan oleh kualitas dan kenyamanan Leather Ratchet Belt.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="avatar-initial flex items-center justify-center mr-3 text-white bg-amber-600">R</div>
+                        <div>
+                            <h4 class="font-bold">Rangga S</h4>
+                            <p class="text-sm text-gray-500">Jakarta | Langganan</p>
+                        </div>
+                    </div>
+                    <div class="text-amber-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600">
+                        "Tali pinggang yang nyaman sekali dipakai. Materialnya premium dan gespernya memiliki banyak tingkat penyesuaian. Cocok untuk acara formal maupun santai."
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="avatar-initial flex items-center justify-center mr-3 text-white bg-amber-500">D</div>
+                        <div>
+                            <h4 class="font-bold">Dimas W</h4>
+                            <p class="text-sm text-gray-500">Bandung | Pertama kali beli</p>
+                        </div>
+                    </div>
+                    <div class="text-amber-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600">
+                        "Sempurna! Tidak pernah menemukan sabuk dengan penutup tanpa kerangka seperti ini. Pelayanan pengirimannya cepat, hanya 2 hari sampai ke Bandung."
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="avatar-initial flex items-center justify-center mr-3 text-white bg-amber-400">L</div>
+                        <div>
+                            <h4 class="font-bold">Linda K</h4>
+                            <p class="text-sm text-gray-500">Surabaya | Pembeli ulang</p>
+                        </div>
+                    </div>
+                    <div class="text-amber-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600">
+                        "Tali pinggang favorit suami! Desainnya elegan dan awet pakai. Saya sudah membeli ke-3 kalinya karena kualitas betul-betul premium."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-6">Pertanyaan Seputar Tali Pinggang</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Cari jawaban atas pertanyaan yang sering diajukan tentang produk kami.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="accordion-item mb-4 border border-gray-200 rounded-xl">
+                    <button class="font-bold w-full text-left p-6 flex justify-between items-center">
+                        <span>Apakah ukurannya bisa disesuaikan?</span>
+                        <i class="fas fa-chevron-down text-amber-500"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-gray-600">
+                        Ya, tali pinggang kami hadir dengan mekanisme ratcheting modern yang memungkinkan penyesuaian dalam kelipatan 0,2 inci, sehingga Anda bisa mendapatkan kenyamanan sempurna.
+                    </div>
+                </div>
+                
+                <div class="accordion-item mb-4 border border-gray-200 rounded-xl">
+                    <button class="font-bold w-full text-left p-6 flex justify-between items-center">
+                        <span>Berapa lama waktu pengiriman?</span>
+                        <i class="fas fa-chevron-down text-amber-500"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-gray-600">
+                        Pengiriman dalam kota Jakarta dan sekitarnya memakan waktu 1-2 hari. Untuk luar kota dan seluruh Indonesia memakan waktu 3-6 hari kerja.
+                    </div>
+                </div>
+                
+                <div class="accordion-item mb-4 border border-gray-200 rounded-xl">
+                    <button class="font-bold w-full text-left p-6 flex justify-between items-center">
+                        <span>Apakah ada garansi?</span>
+                        <i class="fas fa-chevron-down text-amber-500"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-gray-600">
+                        Ya, kami memberikan garansi selama 12 bulan untuk semua produk kami. Apabila mengalami kerusakan dalam masa garansi, kami akan menggantinya dengan yang baru.
+                    </div>
+                </div>
+                
+                <div class="accordion-item mb-4 border border-gray-200 rounded-xl">
+                    <button class="font-bold w-full text-left p-6 flex justify-between items-center">
+                        <span>Bagaimana cara perawatan produk?</span>
+                        <i class="fas fa-chevron-down text-amber-500"></i>
+                    </button>
+                    <div class="px-6 pb-6 text-gray-600">
+                        Tali pinggang kulit asli cukup dielap dengan kain lembut yang sedikit lembab. Hindari kontak langsung dengan bahan kimia atau air berlebih untuk menjaga keawetannya.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-16 bg-gradient-to-r from-amber-400 to-amber-500">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Tingkatkan Gaya Anda Hari Ini!</h2>
+                <p class="text-amber-100 text-xl mb-8">Bergabunglah dengan ribuan pelanggan puas yang telah merasakan kualitas tali pinggang premium kami.</p>
+                
+                <p class="text-amber-100 text-3xl font-bold mb-8">
+                    <span class="original-price">Rp 335.720</span> 
+                    <span class="text-white text-4xl">Rp 167.860</span>
+                </p>
+                
+                <div class="flex justify-center">
+                    <button id="final-order-btn" class="btn-primary px-10 py-5 rounded-full text-xl font-bold shadow-xl relative overflow-hidden">
+                        <span class="relative z-10">PESAN SEKARANG - DISKON 50%</span>
+                        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-10 z-0"></div>
+                    </button>
+                </div>
+                
+                <div class="mt-8">
+                    <p class="text-amber-100 text-sm">❌ Penawaran spesial diskon 50% berakhir dalam:</p>
+                    <div class="flex justify-center gap-2 mt-4">
+                        <div class="countdown-item flex-col">
+                            <div id="promo-hours" class="text-xl font-bold text-amber-700">18</div>
+                            <div class="text-xs text-amber-100 mt-1">JAM</div>
+                        </div>
+                        <div class="flex items-center justify-center text-xl font-bold text-amber-100">:</div>
+                        <div class="countdown-item flex-col">
+                            <div id="promo-minutes" class="text-xl font-bold text-amber-700">45</div>
+                            <div class="text-xs text-amber-100 mt-1">MENIT</div>
+                        </div>
+                        <div class="flex items-center justify-center text-xl font-bold text-amber-100">:</div>
+                        <div class="countdown-item flex-col">
+                            <div id="promo-seconds" class="text-xl font-bold text-amber-700">22</div>
+                            <div class="text-xs text-amber-100 mt-1">DETIK</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // Notifications Logic
+        const customerNames = ["Vina", "Dina", "Kartika", "Lestari", "Putri", "Maya Sari", "Rani", "Permata", "Lestari F"];
+        const customerCities = ["Jakarta", "Surabaya", "Bandung", "Medan", "Bekasi", "Tangerang", "Depok", "Semarang"];
+        const container = document.getElementById('social-proof-container');
+
+        function generateRandomNotification() {
+            // Prevent if form is active to avoid distraction
+            if (document.querySelector('.orderonline-embed-form:focus-within')) return;
+            
+            const name = customerNames[Math.floor(Math.random() * customerNames.length)];
+            const city = customerCities[Math.floor(Math.random() * customerCities.length)];
+            const minutes = Math.floor(Math.random() * 15) + 1;
+            
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = 'social-notification bg-white p-4 rounded-lg shadow-lg mb-3 flex items-start border-l-4 border-amber-500';
+            notification.innerHTML = `
+                <div class="avatar-initial flex items-center justify-center mr-3">${name.charAt(0)}</div>
+                <div>
+                    <p class="font-medium">${name} dari ${city} baru saja memesan Leather Ratchet Belt With Buckle</p>
+                    <p class="text-sm text-gray-500 mt-1">${minutes} menit yang lalu</p>
+                </div>
+            `;
+            
+            // Add to container
+            container.appendChild(notification);
+            
+            // Remove after animation completes
+            setTimeout(() => {
+                notification.remove();
+            }, 5500); // Animation duration + a little extra
+        }
+
+        // Start notification interval
+        let notificationInterval = setInterval(generateRandomNotification, 10000);
+
+        // Scroll to order form function
+        function scrollToOrderForm() {
+            document.getElementById('oo-embed-form-leather-ratchet-belt-with-buckle-8951').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        // Attach click events to buttons
+        document.getElementById('order-btn').addEventListener('click', scrollToOrderForm);
+        document.getElementById('final-order-btn').addEventListener('click', scrollToOrderForm);
+        document.getElementById('sticky-order-btn').addEventListener('click', scrollToOrderForm);
+
+        // Countdown timer simulation
+        function updateCountdown() {
+            const now = new Date();
+            
+            // Simulate some hours, minutes, seconds
+            const hours = Math.floor(Math.random() * 24);
+            const minutes = Math.floor(Math.random() * 60);
+            const seconds = Math.floor(Math.random() * 60);
+            
+            // Update both countdowns
+            document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            document.getElementById('promo-hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('promo-minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('promo-seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Initialize and update countdown each second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+
+        if (menuBtn) {
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+
+        // Accordion functionality
+        const accordions = document.querySelectorAll('.accordion-item button');
+        accordions.forEach(button => {
+            button.addEventListener('click', function() {
+                const accordionContent = this.nextElementSibling;
+                const isOpen = accordionContent.style.display === 'block';
+                
+                // Close all accordions first
+                document.querySelectorAll('.accordion-item div').forEach(el => {
+                    el.style.display = 'none';
+                });
+                
+                // Open clicked accordion if not open
+                if (!isOpen) {
+                    accordionContent.style.display = 'block';
+                }
+            });
+        });
+
+        // Initialize OrderOnline script after DOM loads
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof xEmbedScript != 'function') {
+                var xEmbedScript = function () {
+                    !function(w, d, e, v, id, t, s) {
+                        if (d.getElementById(id)) return;
+                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                        s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+                    }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                };
+            }
+            
+            if (typeof xEmbedInit != 'function') {
+                var xEmbedInit = function (w, n) {
+                    if (w.ooe) return;
+                    n = w.ooe = function() {
+                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!w._ooe) w._ooe = n;
+                    n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                };
+            }
+            
+            xEmbedInit(window);
+            ooe('setup', 'redirect', 'https://nava.orderonline.id');
+            ooe('init', '5f119cd08dcbdb2737678706', '6891a7352453e2ac9405201f', '6891a7352453e2ac94052020', 'oo-embed-form-leather-ratchet-belt-with-buckle-8951', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":true});
+            
+            if (!window.jQuery) {
+                !function(w, d, e, v, id, t, s) {
+                    if (d.getElementById(id)) return;
+                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                    t.addEventListener('load', xEmbedScript);
+                    s = d.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+                }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+            } else {
+                xEmbedScript();
+            }
+        });
+    </script>
+</body>
+</html>
